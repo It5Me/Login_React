@@ -1,0 +1,6 @@
+.Navbar{
+    color:rgb(56, 58, 58);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
