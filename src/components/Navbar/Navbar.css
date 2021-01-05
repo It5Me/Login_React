@@ -1,6 +1,28 @@
-.Navbar{
+.NavbarAll{
     color:rgb(56, 58, 58);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: grey;
+    padding:1px;
+    padding-left: 20px;
+    width: 100%;
+    height: 100px;
+}
+.nav-login{
+    /* background: rgb(247, 243, 243); */
+    position: absolute;
+    top: 27px;
+    left: 1200px;
+    display: flex;
+    flex-direction: row;    
+    list-style-type: none;
+    padding-left:20px;
+    padding-right:30px;
+}
+.nav-login-sign a{
+    padding-left: 50px;
+    text-decoration-line: none;
+    color: black;
+    
 }
