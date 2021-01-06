@@ -1,5 +1,5 @@
 .Signin{
-    background-color: rgb(43, 147, 233);
+    background-color: #3598dc;
     margin:auto;
     top:100px;
     left:0;
@@ -12,7 +12,7 @@
     position: absolute;
     top: 26%;
     left:40%;
-    padding: 5em;
+    padding: 3em;
     
 }
 .Signin .signin-column{
@@ -26,6 +26,8 @@
     margin-right: 10px;
     font-size: 16px;
     padding:10px;
+    background: #f2f2f2;
+    border:none;
 }
 
 .Signin .password{
@@ -33,6 +35,8 @@
     margin-right: 10px;
     font-size: 16px;
     padding:10px;
+    background: #f2f2f2;
+    border:none;
 }
 .Signin .button-signin{
     background-color: #3598dc;

@@ -1,5 +1,5 @@
 .Signup{
-    background-color: rgb(43, 147, 233);
+    background-color: #3598dc;
     margin:auto;
     top:100px;
     left:0;
@@ -10,8 +10,8 @@
 .Signup form{
     background-color: white;
     position: absolute;
-    top: 30%;
-    left:40%;
+    top: 22%;
+    left:35%;
     padding: 3em;
     
 }
@@ -21,6 +21,7 @@
 }
 .Signup .text-pleasefill{
     margin-bottom: 30px;
+    color:grey;
 
 }
 .Signup .form-column{
@@ -28,12 +29,16 @@
 }
 .Signup .FirstLast{
     margin-bottom: 35px;
+    
 }
 .Signup .First{
     margin-right: 10px;
     margin-left: 10px;
     font-size: 16px;
     padding:10px;
+    background: #f2f2f2;
+    border:none;
+    height:50px;
     
 }
 .Signup .Last{
@@ -41,6 +46,10 @@
     margin-left: 10px;
     font-size: 16px;
     padding:10px;
+    background: #f2f2f2;
+    border:none;
+    height:50px;
+    
 
 }
 .Signup .Email{
@@ -48,18 +57,30 @@
     margin-left: 10px;
     font-size: 16px;
     padding:10px;
+    width:470px;
+    height:50px;
+    background: #f2f2f2;
+    border:none;
 }
 .Signup .password{
     margin-bottom: 35px;
     margin-left: 10px;
     font-size: 16px;
     padding:10px;
+    width:470px;
+    height:50px;
+    background: #f2f2f2;
+    border:none;
 }
 .Signup .confirmpassword{
     margin-bottom: 35px;
     margin-left: 10px;
     font-size: 16px;
     padding:10px;
+    height:50px;
+    width:470px;
+    background: #f2f2f2;
+    border:none;
 }
 .Signup .button-Signup{
     background-color: #3598dc;
@@ -70,5 +91,9 @@
     width:150px;
     height:50px;
     border: none;
+    
+}
+.Signup .checkbox{
+    padding:10px;
     
 }

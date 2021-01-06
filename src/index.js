@@ -3,11 +3,43 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { applyMiddleware, compose, createStore } from 'redux';
+import rootReducer from './store/reducer/rootReducer';
+import thunk from 'redux-thunk';
+import { getFirebase, ReactReduxFirebaseProvider } from 'react-redux-firebase';
+import { getFirestore, reduxFirestore,createFirestoreInstance } from 'redux-firestore';
+import firebaseConfig from './config/firebaseconfig';
+import firebase from 'firebase/app';
+import {Provider} from 'react-redux';
 
+const store=createStore(
+  rootReducer,
+  //Apply middleware
+  compose(
+    applyMiddleware(thunk.withExtraArgument({getFirestore,getFirebase})),
+    reduxFirestore(firebase,firebaseConfig)
+
+    )
+
+  )
+const rrfConfig ={
+  userProfile:"users",
+  useFirestoreForProfile:true,
+};
+const rrfProps ={
+  firebase,
+  config:rrfConfig,
+  dispatch:store.dispatch,
+  createFirestoreInstance,
+  presence:"presence",
+  sessions: "sessions",
+};
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <ReactReduxFirebaseProvider {...rrfProps}>
+      <App />
+    </ReactReduxFirebaseProvider>
+  </Provider>,
   document.getElementById('root')
 );
 

@@ -21,9 +21,9 @@ const Navbar =() =>{
             className: 'nav-items-home'
         },
         {
-            title:'Contact',
+            title:'About',
             url: '/',
-            className: 'nav-items-contact'
+            className: 'nav-items-about'
         }
     ]
     return(  

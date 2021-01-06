@@ -3,8 +3,8 @@ const initstate={
 }
 
 
-const authReducer = (state=initstate,actions)=>{
-    switch (actions.type){
+const authReducer = (state=initstate,action)=>{
+    switch (action.type){
         case 'signup_success':
             // object
             return  {
@@ -12,9 +12,10 @@ const authReducer = (state=initstate,actions)=>{
                 authError: null
             }
         case 'signup_failed':
+            console.log('signupfailed')
             return{
                 ...state,
-                authError:action.err.message
+                authError:action.error.message
             }
         case 'signin_success':
             // object
@@ -25,7 +26,7 @@ const authReducer = (state=initstate,actions)=>{
         case 'signin_failed':
             return{
                 ...state,
-                authError:action.err.message
+                authError:action.error.message
             }
         case 'signout_success':
             return{
@@ -35,7 +36,7 @@ const authReducer = (state=initstate,actions)=>{
         case 'signout_failed':
             return{
                 ...state,
-                authError:action.err.message
+                authError:action.error.message
             }
         
         default:
