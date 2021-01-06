@@ -1,0 +1,74 @@
+.Signup{
+    background-color: rgb(43, 147, 233);
+    margin:auto;
+    top:100px;
+    left:0;
+    right:0;
+    bottom: 0;
+    position:fixed; 
+}
+.Signup form{
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left:40%;
+    padding: 3em;
+    
+}
+
+.signup-topic{
+    margin-bottom: 10px;
+}
+.Signup .text-pleasefill{
+    margin-bottom: 30px;
+
+}
+.Signup .form-column{
+    list-style: none;
+}
+.Signup .FirstLast{
+    margin-bottom: 35px;
+}
+.Signup .First{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    padding:10px;
+    
+}
+.Signup .Last{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    padding:10px;
+
+}
+.Signup .Email{
+    margin-bottom: 35px;
+    margin-left: 10px;
+    font-size: 16px;
+    padding:10px;
+}
+.Signup .password{
+    margin-bottom: 35px;
+    margin-left: 10px;
+    font-size: 16px;
+    padding:10px;
+}
+.Signup .confirmpassword{
+    margin-bottom: 35px;
+    margin-left: 10px;
+    font-size: 16px;
+    padding:10px;
+}
+.Signup .button-Signup{
+    background-color: #3598dc;
+    color:white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width:150px;
+    height:50px;
+    border: none;
+    
+}

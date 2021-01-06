@@ -1,0 +1,46 @@
+.Signin{
+    background-color: rgb(43, 147, 233);
+    margin:auto;
+    top:100px;
+    left:0;
+    right:0;
+    bottom: 0;
+    position:fixed; 
+}
+.Signin form{
+    background-color: white;
+    position: absolute;
+    top: 26%;
+    left:40%;
+    padding: 5em;
+    
+}
+.Signin .signin-column{
+    list-style: none;
+}
+.signin-topic{
+    margin-bottom: 40px;
+}
+.Signin .Email{
+    margin-bottom: 35px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding:10px;
+}
+
+.Signin .password{
+    margin-bottom: 35px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding:10px;
+}
+.Signin .button-signin{
+    background-color: #3598dc;
+    color:white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    width:150px;
+    height:50px;
+    border: none;
+}

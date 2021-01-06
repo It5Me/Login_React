@@ -14,6 +14,18 @@ const Navbar =() =>{
             className: 'nav-login-signup'
         }
     ];
+    const Navbaritems=[
+        {
+            title:'Home',
+            url: '/',
+            className: 'nav-items-home'
+        },
+        {
+            title:'Contact',
+            url: '/',
+            className: 'nav-items-contact'
+        }
+    ]
     return(  
         <nav className="NavbarAll">
             <h3 className="nav-logo">It'S ME</h3>
@@ -25,9 +37,8 @@ const Navbar =() =>{
             </ul>
             {/* <ul className="nav-items">
                 {Navbaritems.map((item,index)=>{
-                    return <li className="nav-items-each"<a classNAme{}></a>
+                    return <li className="nav-items-each"><a className={item.className} href={item.url}>{item.title}</a></li>
                 })}
-
             </ul> */}
             
         </nav>
