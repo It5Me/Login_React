@@ -33,6 +33,11 @@ const Signup =(props) =>{
         }
     }
     const handleSubmit =(e)=>{
+        // console.log(firstName)
+        // console.log(lastName)
+        // console.log(email)
+        // console.log(password)
+        // console.log(conFirmPassword)
         // console.log(props);
         e.preventDefault();
         if (conFirmPassword===password){
@@ -54,20 +59,20 @@ const Signup =(props) =>{
                 <p className="text-pleasefill">Please fill in this form to create an account!</p>
                 <ul className="form-column">
                     <li className="FirstLast">
-                        <input className="First" type="text" placeholder="First Name" onChange={handleChange} value="Pim"></input>
-                        <input  className="Last" type="text" placeholder="Last Name" onChange={handleChange} value="Piyajiranan"></input>
+                        <input className="First" type="text" placeholder="First Name" onChange={handleChange} ></input>
+                        <input  className="Last" type="text" placeholder="Last Name" onChange={handleChange} ></input>
                     </li>
 
                     <li>
-                        <input className="Email" type="text" placeholder="Email" onChange={handleChange} value="iogoout@gmail.com"></input>
+                        <input className="Email" type="text" placeholder="Email" onChange={handleChange} ></input>
                     </li> 
 
                     <li>
-                        <input  className="password" type="password" placeholder="Password" onChange={handleChange} value="1234"></input>
+                        <input  className="password" type="password" placeholder="Password" onChange={handleChange} ></input>
                     </li>
 
                     <li>
-                        <input  className="confirmpassword" type="password" placeholder="Confirm password" onChange={handleChange} value="1234"></input>
+                        <input  className="confirmpassword" type="password" placeholder="Confirm password" onChange={handleChange} ></input>
                     </li>
 
 

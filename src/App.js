@@ -6,12 +6,9 @@ import {Home , Navbar} from './components'
 import {Signin,Signup} from './components/auth'
 
 const App =() =>{
-  const reducer=()=>{
-    return 
-  }
-  const store = createStore(reducer)
+  
   return(
-    <Provider store={store}>
+    
     <BrowserRouter>
       <div className="App">
         <Navbar/>
@@ -22,7 +19,7 @@ const App =() =>{
         </Switch>
       </div>
     </BrowserRouter>
-    </Provider>
+    
   )
 }
 export default App;

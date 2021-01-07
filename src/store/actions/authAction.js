@@ -3,11 +3,12 @@ export const signUp= (newUser) =>{
         console.log(newUser);
         const firebase= getFirebase();
         const firestore= getFirestore();
-
+        console.log(firebase,firestore)
         firebase.auth().createUserWithEmailAndPassword(
             newUser.email,
             newUser.password
     ).then((res) => {
+        console.log(res)
         return firestore.collection('users').doc(res.user.uid).set({
             firstName:newUser.firstName,
             lastName: newUser.lastName
