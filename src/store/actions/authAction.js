@@ -1,4 +1,4 @@
-export const signUp= (newUser) =>{
+export const signup= (newUser) =>{
     return (dispatch ,getState,{getFirebase,getFirestore}) =>{
         console.log(newUser);
         const firebase= getFirebase();
@@ -21,9 +21,22 @@ export const signUp= (newUser) =>{
     
     }
 }
-// export const signin=()=>{
-
-// }
-// export const signout=()=>{
-
-// }
+export const signin=(cred)=>{
+    return (dispatch,getState,{getFirebase}) =>{
+        const firebase = getFirebase();
+        firebase.auth().signInWithEmailAndPassword(
+            cred.email,
+            cred.password
+        ).then (() => dispatch({type:'signin_success'}))
+        .catch((error) => dispatch({type:'signin_failed',error}))
+    }
+}
+export const signout=()=>{
+    return (dispatch,getState,{getFirebase}) =>{
+        const firebase = getFirebase();
+        
+        firebase.auth().signOut()
+        .then (() => dispatch({type:'signout_success'}))
+        .catch((error) => dispatch({type:'signout_failed',error}))
+    }
+}

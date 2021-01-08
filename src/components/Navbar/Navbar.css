@@ -8,6 +8,11 @@
     padding-left: 20px;
     width: 100%;
     height: 100px;
+    position:relative;
+}
+.nav-logo{
+    float:left;
+    position:absolute;
 }
 .nav-login{
     /* background: rgb(247, 243, 243); */

@@ -48,3 +48,6 @@
     height:50px;
     border: none;
 }
+.Signin .error-msg{
+    color:red;
+}

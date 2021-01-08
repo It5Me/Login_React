@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
-import {signUp} from '../../../store/actions/authAction';
+import {signup} from '../../../store/actions/authAction';
 import './Signup.css'
 const Signup =(props) =>{
     const [firstName,setFirstName]= useState('');
@@ -41,7 +41,7 @@ const Signup =(props) =>{
         // console.log(props);
         e.preventDefault();
         if (conFirmPassword===password){
-            props.signUp({
+            props.signup({
                email:email,
                firstName:firstName,
                lastName:lastName,
@@ -51,7 +51,7 @@ const Signup =(props) =>{
             // props.signup({email,firstName,lastName,password});
         }
     }
-
+    if (props.auth.uid) return <Redirect to="/"/>
     return(
         <div className="Signup">
                 <form onSubmit={handleSubmit}>
@@ -95,7 +95,7 @@ const mapStateToProps = (state) =>{
 }
 const mapDispatchToProps = (dispatch)=>{
     return {
-        signUp:(cre) => dispatch(signUp(cre))
+        signup:(cre) => dispatch(signup(cre))
     }
 }
 export default connect(mapStateToProps,mapDispatchToProps)(Signup)
